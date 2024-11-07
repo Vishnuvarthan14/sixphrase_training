@@ -13,8 +13,7 @@ public class shifting_string {
             {
                 int index=alp.indexOf(letters[j]);
                 int pos=index + shifts[i];
-                while(pos>25)
-                    pos=pos-26;
+                    pos=pos%26;
                 letters[j]=alp.charAt(pos);
             }
         }
